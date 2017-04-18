@@ -61,12 +61,60 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.connect-busboy">module connect-busboy</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.connect-busboy.connect-busboy">
+            function <span class="apidocSignatureSpan"></span>connect-busboy
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.connect-busboy" id="apidoc.module.connect-busboy">module connect-busboy</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.connect-busboy.connect-busboy" id="apidoc.element.connect-busboy.connect-busboy">
+        function <span class="apidocSignatureSpan"></span>connect-busboy
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">connect-busboy = function (options) {
+  options = options || {};
+
+  return function(req, res, next) {
+    if (req.busboy
+        || req.method === &#x27;GET&#x27;
+        || req.method === &#x27;HEAD&#x27;
+        || !hasBody(req)
+        || !RE_MIME.test(mime(req)))
+      return next();
+
+    var cfg = {};
+    for (var prop in options)
+      cfg[prop] = options[prop];
+    cfg.headers = req.headers;
+
+    req.busboy = new Busboy(cfg);
+
+    if (options.immediate) {
+      process.nextTick(function() {
+        req.pipe(req.busboy);
+      });
+    }
+
+    next();
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
