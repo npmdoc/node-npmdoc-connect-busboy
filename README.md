@@ -1,9 +1,14 @@
-# api documentation for  [connect-busboy (v0.0.2)](https://github.com/mscdex/connect-busboy)  [![npm package](https://img.shields.io/npm/v/npmdoc-connect-busboy.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-connect-busboy) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-connect-busboy.svg)](https://travis-ci.org/npmdoc/node-npmdoc-connect-busboy)
+# npmdoc-connect-busboy
+
+#### basic api documentation for  [connect-busboy (v0.0.2)](https://github.com/mscdex/connect-busboy)  [![npm package](https://img.shields.io/npm/v/npmdoc-connect-busboy.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-connect-busboy) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-connect-busboy.svg)](https://travis-ci.org/npmdoc/node-npmdoc-connect-busboy)
+
 #### Connect middleware for busboy
 
-[![NPM](https://nodei.co/npm/connect-busboy.png?downloads=true)](https://www.npmjs.com/package/connect-busboy)
+[![NPM](https://nodei.co/npm/connect-busboy.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/connect-busboy)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-connect-busboy/build/screenCapture.buildNpmdoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-connect-busboy%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-connect-busboy/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-connect-busboy/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-connect-busboy/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-connect-busboy/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-connect-busboy/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-connect-busboy/build/screenCapture.npmPackageListing.svg)
 
@@ -17,8 +22,7 @@
 
 {
     "author": {
-        "name": "Brian White",
-        "email": "mscdex@mscdex.net"
+        "name": "Brian White"
     },
     "bugs": {
         "url": "https://github.com/mscdex/connect-busboy/issues"
@@ -54,31 +58,20 @@
     "main": "./index",
     "maintainers": [
         {
-            "name": "mscdex",
-            "email": "mscdex@mscdex.net"
+            "name": "mscdex"
         }
     ],
     "name": "connect-busboy",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+ssh://git@github.com/mscdex/connect-busboy.git"
     },
     "scripts": {},
-    "version": "0.0.2"
+    "version": "0.0.2",
+    "bin": {}
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module connect-busboy](#apidoc.module.connect-busboy)
-
-
-
-# <a name="apidoc.module.connect-busboy"></a>[module connect-busboy](#apidoc.module.connect-busboy)
 
 
 
